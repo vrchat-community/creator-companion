@@ -4,7 +4,7 @@ The Entry Point for Making things in VRChat
 
 ![image](https://user-images.githubusercontent.com/737888/186978348-8691da98-9144-48ac-9c0b-2eeb37662164.png)
 
-![download-@vrchat com](https://user-images.githubusercontent.com/737888/186981035-6edafe00-71b6-4e44-b2f4-08d08980ff72.svg)
+[![download-@vrchat com](https://user-images.githubusercontent.com/737888/186981035-6edafe00-71b6-4e44-b2f4-08d08980ff72.svg)](https://vrchat.com/home/download)
 
 The full docs for the Creator Companion and connected projects are at [https://vcc.docs.vrchat.com](https://vcc.docs.vrchat.com).
 
