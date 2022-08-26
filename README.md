@@ -2,7 +2,7 @@
 
 The Entry Point for Making things in VRChat
 
-![image](https://user-images.githubusercontent.com/737888/186978348-8691da98-9144-48ac-9c0b-2eeb37662164.png)
+[![image](https://user-images.githubusercontent.com/737888/186978348-8691da98-9144-48ac-9c0b-2eeb37662164.png)](https://vrchat.com/home/download)
 
 [![download-@vrchat com](https://user-images.githubusercontent.com/737888/186981035-6edafe00-71b6-4e44-b2f4-08d08980ff72.svg)](https://vrchat.com/home/download)
 
