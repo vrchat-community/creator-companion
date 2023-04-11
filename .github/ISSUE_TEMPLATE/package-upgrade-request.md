@@ -2,7 +2,7 @@
 name: Package upgrade request
 about: Track an incompatible package or prefab which needs to migrate to VPM
 title: "[PACKAGE] "
-labels: ''
+labels: 'package upgrade request'
 assignees: ''
 
 ---
