@@ -18,3 +18,14 @@ The Creator Companion is only fully-supported on Windows 10 (Windows 11 might wo
 
 ### Unity Editor Versions
 The Creator Companion requires our currently supported Unity Version. It will automatically try to find it on your hard drive, or it can help you install it.
+
+### Suggesting changes
+Our documentation is public on GitHub, and we appreciate contributions from our community! Click 'Edit this page' at the bottom of any page to suggest changes.
+
+When suggesting changes, GitHub will ask you to
+1. [Sign up](https://github.com/join) for a free GitHub account,
+2. [Create a fork](https://github.com/vrchat-community/creator-companion/fork) of this repository,
+3. [Edit the page](https://github.com/vrchat-community/creator-companion/edit/main/Docs/docs/index.md) with GitHub's built-in Markdown editor,
+4. And [submit a Pull Request](https://github.com/vrchat-community/creator-companion/compare) to have your changes reviewed and merged into our documentation.
+
+Thank you for your help!
