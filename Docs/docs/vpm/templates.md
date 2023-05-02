@@ -41,13 +41,16 @@ You can also add your own templates to easily start projects with your favorite 
 ```
 The only required fields are "name" and "displayName" for now. Note that "defaultScene" is part of the spec from Unity but does not appear to work.
 
-4a. If my Hype Generator tool was available as a VPM-compatible package in the VCC, I could add it to the vpmDependencies list in HypeWorld\Packages\manifest.json:
+4a. If my Hype Generator tool was available as a VPM-compatible package in the VCC, I could add it to the vpmDependencies list in HypeWorld\Packages\vpm-manifest.json:
 ```json
 {
-	"vpmDependencies" : {
-		"com.vrchat.base" : "3.1.x",
-		"com.vrchat.worlds" : "3.1.x",
-		"com.mydomain.hype" : "3.1.x"
+	"dependencies" : {
+		"com.vrchat.worlds" : {
+			"version" : "^3.1.x"
+		},
+		"com.mydomain.hype" : {
+			"version" : "1.0.x"
+		}
 	}
 }
 ```
