@@ -45,9 +45,12 @@ The only required fields are "name" and "displayName" for now. Note that "defaul
 ```json
 {
 	"dependencies" : {
-		"com.vrchat.base" : "3.1.x",
-		"com.vrchat.worlds" : "3.1.x",
-		"com.mydomain.hype" : "3.1.x"
+		"com.vrchat.worlds" : {
+			"version" : "^3.1.x"
+		},
+		"com.mydomain.hype" : {
+			"version" : "1.0.x"
+		}
 	}
 }
 ```
