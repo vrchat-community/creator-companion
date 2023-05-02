@@ -27,15 +27,13 @@ Here's an exceptionally simple package you can use as an example. Unpack it some
 
 ### Prerelease Packages
 If you want to test out the latest versions of SDKs and Packages, you can opt-in to showing prerelease versions in the VCC. To do this:
-1. Open your settings.json file. The easiest way is to go to the Settings view of the VCC and press the 'settings.json' button under the "Files and Folders" header.
-2. Close the VCC.
-3. Change the line `"showPrereleasePackages": false,` to `"showPrereleasePackages": true,`.
-4. Save the file.
-5. Re-Open the VCC.
+1. Open the Settings screen.
+2. Switch to the "Packages" tab.
+3. Scroll down to the Heading "Pre-Release Packages" and check the box next to "Show Pre-Release Packages".
+
+![image](https://user-images.githubusercontent.com/737888/234437096-5c3013e9-c957-40ff-aba4-86cf3839750b.png)
 
 You will now be able to see beta versions in the dropdown for each package that has them.
-
-Note: We limit this change to a manual edit of the settings file rather than an easy button on the Settings page to ensure it's never enabled by accident, and that a user who wants beta packages can find and follow these instructions.
 
 ## Package Format
 The VPM format follows the Unity Package format with some additions. We recommend you read through the official docs about [Custom Packages](https://docs.unity3d.com/2019.4/Documentation/Manual/CustomPackages.html) to familiarize yourself with those first.
@@ -44,30 +42,51 @@ We use the same required [Package Manifest](https://docs.unity3d.com/2019.4/Docu
 
 ### VPM Manifest Additions
 VPM package manifests have a few differences from regular Unity manifests:
-1. The 'vpmDependencies' property, which lists the vpm-based dependencies your project requires.
-2. The 'url' property, which provides a direct-download link to a zip file of your package.
-3. The _optional_ 'legacyFolders' property, which can be used to detect and migrate from the old .unitypackage version of your project to this version. Any folders found with a matching path will be removed. You can include the GUID as the object's value if you want to search for and find the folder even if it was moved from its original location. if no GUID is provided, it will only match the path.
-4. The _optional_ 'legacyFiles' object, which is used like the legacyFolders object above.
+
+1. The `vpmDependencies` property lists the vpm-based dependencies your project requires.
+2. The `url` property provides a direct-download link to a zip file of your package.
+3. The _optional_ `legacyFolders` property can be used to detect and migrate from the old .unitypackage version of your project to this version. Any folders found with a matching path will be removed. You can include the GUID as the object's value if you want to search for and find the folder even if it was moved from its original location. if no GUID is provided, it will only match the path.
+4. The _optional_ `legacyFiles` property is used as the `legacyFolders` object above.
+5. The _optional_ `zipSHA256` property is used to verify the integrity of the zip file you provide. Currently, it is only used for cache invalidation. But we might start enforcing hash checks in the future to ensure the integrity of the packages the users download.
+6. The _optional_ `changelogUrl` property can be used to point to a changelog file for your package. This is not currently used by the VCC, but it might be utilized in the future.
+
+Altogether that makes the list of required fields look like this:
+
+- `name`
+- `displayName`
+- `version`
+- `url`
+- `author`
+  - `name`
+  - `email`
+
+The rest of the fields are optional, but we recommend you fill them out as much as possible. Check out the [Unity Package Manifest](https://docs.unity3d.com/2019.4/Documentation/Manual/upm-manifestPkg.html) docs to see the list of optional fields.
 
 ```json
 {
-	"name" : "com.mydomain.avatarTool",
-	"displayName" : "My Avatar Tools",
-	"version" : "1.0.0",
-	"unity" : "2019.4",
-	"description" : "Tools for easier Avatar Creation",
-	"vpmDependencies" : {
-		"com.vrchat.avatars" : "3.1.0"
-	},
-	"url" : "https://packages.vrchat.com/com.vrchat.avatars-3.1.0.zip",
-    "legacyFolders" : {
-      "Assets\\FolderName" : "vr031f928e5c709x9887f6513084aaa51"
-    },
-    "legacyFiles" : {
-      "ProjectVersion.txt" : "jf988739jfdskljf098323jjhf"
-    }
+  "name" : "com.mydomain.avatarTool",
+  "displayName" : "My Avatar Tools",
+  "version" : "1.0.0",
+  "author": {
+    "name": "My Name",
+    "email": "contact@mydomain.com"
+  },
+  "unity" : "2019.4",
+  "description" : "Tools for easier Avatar Creation",
+  "vpmDependencies" : {
+    "com.vrchat.avatars" : "3.1.0"
+  },
+  "url" : "https://packages.vrchat.com/com.vrchat.avatars-3.1.0.zip",
+  "legacyFolders" : {
+    "Assets\\FolderName" : "vr031f928e5c709x9887f6513084aaa51"
+  },
+  "legacyFiles" : {
+    "ProjectVersion.txt" : "jf988739jfdskljf098323jjhf"
+  }
 }
 ```
+
+We also **highly recommend** listing the `license` of your package in the package manifest. Unity requires this field if you do not have LICENSE file in your project, but we recommend specifying it even if you do have a LICENSE file. This field might be displayed in the VCC interface in the future. The license should use the [SPDX format](https://spdx.org/licenses/).
 
 ### Versions and Ranges
 We've improved upon the functionality provided by the Unity Package Manager by supporting dependencies-of-dependencies for packages, and treating dependency versions as ranges. We use the [SemanticVersioning](https://github.com/adamreeve/semver.net) library to do this, which supports [SemVer 2.0](https://semver.org/) and [a wide variety of range specifiers](https://github.com/adamreeve/semver.net#ranges).
