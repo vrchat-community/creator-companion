@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: VRChat Canny SDK Bug Reports
+    url: https://feedback.vrchat.com/sdk-bug-reports/
+    about: Bug of VRCSDK? Report on Canny
+  - name: VRChat Canny Feature Requests
+    url: https://feedback.vrchat.com/feature-requests/
+    about: Feature request for VRCSDK? Request on Canny
