@@ -26,15 +26,15 @@ Adds DataContainers, PhysBones 1.1 ('Squishy PhysBones'), AsyncGPUReadback, and 
 - **Squishy PhysBones!** You can now implement PhysBones that can "squish" or compress instead of stretch!
   - To set up a Squishy PhysBone, swap your PhysBone component to version 1.1 and adjust the "Max Squish" value.
   - **All PhysBones are now versioned!** You can change the version in the PhysBone component. This is being done to allow us to add new features safely.
-    - Old PhysBones are on Version 1.0 automatically.
-    - Squishy PhysBones features are on Version 1.1. There are some other changes documented below.
+    - Old PhysBones are on Version 1.0 automatically. 1.0 includes SquishyBones.
+    - Gravity and Stiffness changes are on Version 1.1. There's some other changes documented below.
     - **All versions will be maintained.** 1.0 is not being deprecated but it is feature-locked and will not have new features added. Any time we add a new "breaking" feature, we will increment the version.
   - PhysBones 1.1: **Gravity and Stiffness act differently and require new values if you are upgrading from 1.0.**
     - Gravity is now the ratio of how much the bones should point straight up/down in world space when at rest.
     - Stiffness is now the ratio of how much a bone attempts to stay in its previous orientation.
     - Previously, these values were direct forces that you needed to balance with the Pull factor. We believe this should be more direct and easier to use.
     - These changes were also necessary to support the new functionality added to the component.
-  - PhysBones 1.1: **Max Squish value has been added.** This is a percentage of how much a bone can shrink.
+  - **Max Squish value has been added.** This is a percentage of how much a bone can shrink.
     - The `_Squish` parameter has been added. It works similarly to the `_Stretch` parameter.
   - PhysBones 1.1: **Stretch Motion value has been added.** This is a ratio of how much motion affects a bone stretching or squishing.
   - Categories of values in the VRCPhysBone component UI can now be collapsed.
