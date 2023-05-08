@@ -91,6 +91,6 @@ We also **highly recommend** listing the `license` of your package in the packag
 ### Versions and Ranges
 We've improved upon the functionality provided by the Unity Package Manager by supporting dependencies-of-dependencies for packages, and treating dependency versions as ranges. We use the [SemanticVersioning](https://github.com/adamreeve/semver.net) library to do this, which supports [SemVer 2.0](https://semver.org/) and [a wide variety of range specifiers](https://github.com/adamreeve/semver.net#ranges).
 
-For example, we use the format "^3.1.x" in many of the official templates and VRC SDK packages. This range will match all versions past 3.1.0, but will not allow a the major version to change. This is done because the major version number is breaking changes. For example, version 3.5.2 will be allowed, while 4.1.0 will not.
+For example, we use the format "^3.1.x" in many of the official templates and VRC SDK packages. This format is designed to match any version past 3.1.0, but it restricts changes to the major version number. This is because a change in the major version number signifies breaking changes that may not be compatible with previous versions. For instance, if a package has version 3.5.2, it will match the "^3.1.x" format, whereas version 4.1.0 will not.
 
 This format also supports [Prerelease Packages](#prerelease-packages).
