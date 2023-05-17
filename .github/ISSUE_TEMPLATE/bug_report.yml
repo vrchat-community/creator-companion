@@ -1,0 +1,73 @@
+name: Bug Report
+description: Create a bug report to help us improve the Creator Companion
+title: "[BUG]"
+labels: ["bug"]
+body:
+  - type: textarea
+    attributes:
+      label: Describe the bug
+      description: A clear and concise description of what the bug is.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: To Reproduce
+      description: Steps to reproduce the behavior
+      placeholder: |
+        1. Go to '...'
+        2. Click on '....'
+        3. Scroll down to '....'
+        4. See error
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Expected behavior
+      description: A clear and concise description of what you expected to happen.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Screenshots
+      description: If applicable, add screenshots to help explain your problem.
+
+  - type: dropdown
+    id: product
+    attributes:
+      label: Related Product
+      description: |
+        Which products does this issue affect? 
+        If it affects multiple products, please add them in 'Additional context.'
+      options:
+        - VCC (VRChat Creator Companion)
+        - vpm-resolver (Package Resolver)
+        - VPM CLI
+        - VRC Quick Launcher
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: Product Version
+      description: The version of VCC, vpm-resolver, vpm cli or else
+      placeholder: 2.1.1
+    validations:
+      required: true
+
+  - type: dropdown
+    id: os
+    attributes:
+      label: OS
+      description: Which platform are you using?
+      options:
+        - Windows 10
+        - Windows 11
+        - Other Windows (Tell more on Additional context)
+        - macOS / Linux
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Additional context
+      description: Add any other context about the problem here.
