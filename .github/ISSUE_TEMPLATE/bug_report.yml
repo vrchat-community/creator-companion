@@ -1,5 +1,5 @@
 name: Bug Report
-description: Create a report to help us improve
+description: Create a bug report to help us improve the Creator Companion
 title: "[BUG]"
 labels: ["bug"]
 body:
@@ -36,9 +36,8 @@ body:
     attributes:
       label: Related Product
       description: |
-        Which product your issue affects to? 
-        If is about multiple products, 
-        please tell us on Additional context.
+        Which products does this issue affect? 
+        If it affects multiple products, please add them in 'Additional context.'
       options:
         - VCC (VRChat Creator Companion)
         - vpm-resolver (Package Resolver)
