@@ -2,6 +2,15 @@
 
 You can create and share your own custom package listings, including your own packages as well as open source packages from the community.
 
+:::caution
+
+You SHOULD NOT remove any versions you've published.
+It breaks projects under source control system.
+Projects under source control system doesn't include contents of vpm package.
+See [Using Source Control with the VPM](https://vcc.docs.vrchat.com/vpm/source-control) for more details packages on source control system.
+
+:::
+
 ## Using GitHub
 
 The easiest way to publish packages and listings is with [GitHub](https://github.com/). You can do everything you need with a free account. If you use another source control service or just want to roll your own approach, see [Using Your Own Services](#using-your-own-services) below.
