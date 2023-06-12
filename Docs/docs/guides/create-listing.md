@@ -45,6 +45,6 @@ Take a look at the [example listing](https://vrchat-community.github.io/template
   * {package id}
     * versions
     * {version string in SemVer}
-      * {contents of `package.json`, which is a valid VPM manifest}
+      * {valid VPM manifest} _(the full contents of `package.json)_
 
 If you serve these from a publicly accessible URL, the Creator Companion will be able to read it and provide the packages listed inside.
