@@ -94,3 +94,12 @@ We've improved upon the functionality provided by the Unity Package Manager by s
 For example, we use the format "^3.1.x" in many of the official templates and VRC SDK packages. This format is designed to match any version past 3.1.0, but it restricts changes to the major version number. This is because a change in the major version number signifies breaking changes that may not be compatible with previous versions. For instance, if a package has version 3.5.2, it will match the "^3.1.x" format, whereas version 4.1.0 will not.
 
 This format also supports [Prerelease Packages](#prerelease-packages).
+
+<!-- Don't forget sync this caution with guides/create-listing.md -->
+
+:::caution
+
+Do not remove old versions of your VPM package when adding new versions.
+Removing old versions will break projects using [source control](https://vcc.docs.vrchat.com/vpm/source-control).
+
+:::

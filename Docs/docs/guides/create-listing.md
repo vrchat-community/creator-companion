@@ -2,6 +2,8 @@
 
 You can create and share your own custom package listings, including your own packages as well as open source packages from the community.
 
+<!-- Don't forget sync this caution with vpm/packages.md -->
+
 :::caution
 
 Do not remove old versions of your VPM package when adding new versions.
