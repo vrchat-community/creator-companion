@@ -4,10 +4,8 @@ You can create and share your own custom package listings, including your own pa
 
 :::caution
 
-You SHOULD NOT remove any versions you've published.
-It breaks projects under source control system.
-Projects under source control system doesn't include contents of vpm package.
-See [Using Source Control with the VPM](https://vcc.docs.vrchat.com/vpm/source-control) for more details packages on source control system.
+Do not remove old versions of your VPM package when adding new versions.
+Removing old versions will break projects using [source control](https://vcc.docs.vrchat.com/vpm/source-control).
 
 :::
 
