@@ -99,7 +99,7 @@ This format also supports [Prerelease Packages](#prerelease-packages).
 
 :::caution
 
-Do not remove old versions of your VPM packages.
+Do not remove old versions of your VPM packages after publishing them.
 Removing old versions will break projects using [source control](https://vcc.docs.vrchat.com/vpm/source-control).
 
 :::

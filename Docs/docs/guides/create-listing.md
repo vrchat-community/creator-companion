@@ -6,7 +6,7 @@ You can create and share your own custom package listings, including your own pa
 
 :::caution
 
-Do not remove old versions of your VPM packages.
+Do not remove old versions of your VPM packages after publishing them.
 Removing old versions will break projects using [source control](https://vcc.docs.vrchat.com/vpm/source-control).
 
 :::
