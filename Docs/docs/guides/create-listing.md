@@ -2,15 +2,6 @@
 
 You can create and share your own custom package listings, including your own packages as well as open source packages from the community.
 
-<!-- Don't forget sync this caution with vpm/packages.md -->
-
-:::caution
-
-Do not remove old versions of your VPM packages after publishing them.
-Removing old versions will break projects using [source control](https://vcc.docs.vrchat.com/vpm/source-control).
-
-:::
-
 ## Using GitHub
 
 The easiest way to publish packages and listings is with [GitHub](https://github.com/). You can do everything you need with a free account. If you use another source control service or just want to roll your own approach, see [Using Your Own Services](#using-your-own-services) below.
@@ -54,6 +45,6 @@ Take a look at the [example listing](https://vrchat-community.github.io/template
   * {package id}
     * versions
     * {version string in SemVer}
-      * {valid VPM manifest} _(the full contents of `package.json)_
+      * {valid VPM manifest}
 
 If you serve these from a publicly accessible URL, the Creator Companion will be able to read it and provide the packages listed inside.
