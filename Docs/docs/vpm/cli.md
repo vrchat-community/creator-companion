@@ -60,6 +60,23 @@ If the project is found, its type will be printed to the console.
 
 Returns a 0 if a project is found, and a 1 if it is not.
 
+### resolve project
+Restores all VPM packages specified in the project's `vpm-manifest.json` file. This is done automatically by the [Resolver](/vpm/resolver) when you open a project in Unity, but you can also do it manually with this command.
+
+```console 
+vpm resolve project [<name>]
+```
+
+**Arguments**
+
+* **name**: Optional name of the project to find. If not provided, the current directory will be checked.Otherwise, the following places will be searched:
+* Name as absolute path
+* Name as relative path from current directory
+
+If the project is found, its packages will be restored.
+
+Returns a 0 if the packages were successfully restored, and a 1 if they were not.
+
 ### migrate project
 Migrates projects created with the legacy .unitypackage SDKs to the new system if they use the SDK3 Worlds or Avatars unitypackages (SDK2 not supported). They can be Unity 2017, 2018 or 2019 projects. Will also migrate UdonSharp and CyanEmu to the new package-based versions.
 
@@ -115,6 +132,27 @@ vpm add package <packageName> [-p <project>]
   * Adds the official Avatars package to the project in the current directory.
 * `vpm add package "C:/MyPackages/MirrorExploder" "../MyProjectDir"`
   * Adds my local package "MirrorExploder" to the project which is one directory up from the current working directory.
+
+### remove package
+Removes a VPM package from an existing Project
+
+```console 
+vpm remove package <packageName> [-p <project>] [-f]
+```
+
+**Arguments**
+* **packageName**: The package to remove. This can be the unique name of any package in the project.
+
+**Options**
+* **-p|--project**: Specifies the project from which the package will be removed If no argument is provided, the method will look in the current directory. If provided, the value can be an absolute or relative path to a Unity Project.
+
+* **-f|--force**: Removes a package even if doing so might break the project.
+
+**Examples**
+* `vpm remove package com.vrchat.clientsim`
+  * Removes the ClientSim package from the project in the current directory.
+* `vpm remove package "com.vrchat.base" "../MyProjectDir" -f`
+  * Removes the VRChat Base package from the project which is one directory up from the current working directory, even though doing so will probably break the project.
 
 ## Templates
 [Templates](templates) are barebones VRChat projects which can be used as a starting point for new projects, pulling in your favorite packages, prefabs and tools to get running quickly.
