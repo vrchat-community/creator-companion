@@ -14,7 +14,7 @@ The VRChat SDK is technically only allowed to be distributed by VRChat and shoul
 * `ProjectSettings` folder
   * Required by Unity, contains all your project settings such as physics and tags.
 * `Packages` folder
-  * Required by Unity, contains your project manifest (Unity Package dependencies) as well as the [Resolver](vpm/resolver) and VPM Manifest.
+  * Required by Unity, contains your project manifest (Unity Package dependencies) as well as the [Resolver](/vpm/resolver) and VPM Manifest.
 * `Packages\com.vrchat.core.vpm-resolver` folder
   * This tool can restore VPM packages into your project without the VCC.
 
