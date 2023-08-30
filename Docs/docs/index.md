@@ -1,5 +1,4 @@
 # Creator Companion
-
 ## What Is It?
 The VRChat Creator Companion (VCC) is the new Entry Point for creating things for VRChat! It currently includes our new [VRChat Package Manager (VPM)](vpm), and houses official packages, community packages, learning resources, tools, and more!
 
