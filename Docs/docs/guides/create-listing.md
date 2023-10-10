@@ -21,14 +21,14 @@ Press [![Use This Template](https://user-images.githubusercontent.com/737888/185
 to start a new GitHub project based on the official Package Listing Template, and follow the directions there to finish creating your own version. Then you just need to modify the source.json file to point to the packages you want to list.
 
 ### 2. Choose a Compatible GitHub Repository
-You must choose a VPM-compatible package which is hosted on GitHub, and uses the [official release automation](https://github.com/vrchat-community/template-package/blob/main/.github/workflows/release.yml) we publish as part of our [Package Template](https://github.com/vrchat-community/template-package). If you've already got your sights set on one of these, skip to [Add Repos to your Listing Source](#add-repos-to-your-listing-source).
+You must choose a VPM-compatible package which is hosted on GitHub, and uses the [official release automation](https://github.com/vrchat-community/template-package/blob/main/.github/workflows/release.yml) we publish as part of our [Package Template](https://github.com/vrchat-community/template-package). If you've already got your sights set on one of these, skip to [Add Repos to your Listing Source](#3-add-repos-to-your-listing-source).
 
 #### 2A. Adding Automation to an Existing Repo
 The easiest way to get started is to use the [Package Template](https://github.com/vrchat-community/template-package) repo to make a new package from scratch. However, it's pretty easy to add automation to an existing repo.
 
 1. Add the [release](https://github.com/vrchat-community/template-package/blob/main/.github/workflows/release.yml) GitHub action to your repo at `.github/workflows/release.yml`. You'll know it's in the right place if you can click on the "Actions" tab in your repo and see an action called "Build Release".
-2. Follow the instructions under [Setting up Automation](https://github.com/vrchat-community/template-package#setting-up-the-automation).
-3. Create at least one compatible Release by running the "Build Release" action from your Actions tab. In the future, this will happen automatically when you push changes to your package's source to your main branch (or update the ["on:" section of your Action](https://github.com/vrchat-community/template-package/blob/2d0924df345bba94f8776572942b5a453f22fe2e/.github/workflows/release.yml#L3-L7).)
+2. Follow the instructions under [Setting up Automation](https://github.com/vrchat-community/template-package#-setting-up-the-automation).
+3. Create at least one compatible Release by running the "Build Release" action from your Actions tab.
 
 ### 3. Add Repos to your Listing Source
 Edit the `source.json` file to add the packages to include.
