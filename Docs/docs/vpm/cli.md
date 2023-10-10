@@ -109,9 +109,9 @@ vpm check package <name>
 * **name**: The package to check. This can be the unique name of any package in the Official or Curated package listings, like `com.vrchat.worlds` or `com.vrchat.udonsharp`, or it can be a relative or absolute path to a local package.
 
 **Examples**
-* `vpm check com.vrchat.avatars`
+* `vpm check package com.vrchat.avatars`
   * Prints info about the official Avatars package
-* `vpm check "C:/MyPackages/MirrorExploder"`
+* `vpm check package "C:/MyPackages/MirrorExploder"`
   * Prints info about the local package "MirrorExploder".
 
 ### add package
@@ -206,12 +206,28 @@ vpm list repos
 Adds a local or remote repo of packages.
 
 ```console 
-vpm add repo <path>
+vpm add repo <path> [--headers key:value key:value]
 ```
 
 **Arguments**
 
 * **path**: The path to add. It can be an absolute path to a local json file, or a url to a remote json file. If it's a local file, it must exist to be added. If it's a remote file, it must connect within 10 seconds of the request to be added.
+
+**Options**
+
+* **-h|--headers**: Key/Value pairs to be added from command line. Some repo urls require different headers, and the option accounts for any number of headers. This is not necessary for explicit local paths, only for remote urls. Headers should be added following this pattern `<name>:<value>`. It should be noted that if the value has a space in it, wrap the header in quotes.
+
+```console
+vpm add repo https://test.com/index.json --headers "Authorization:Bearer my_token"
+```
+
+Adds a repo found at `https://test.com/index.json` and will send along the Authorization header whenever it requests the listing.
+
+```console
+vpm add repo https://test.com/index.json -h "Authorization:Bearer my_token" Accept:text/html
+```
+
+Adds a repo found at `https://test.com/index.json` and will send along the Authorization and Accept headers whenever it requests the listing.
 
 Returns 0 if the repo was added and 1 if it was not.
 
