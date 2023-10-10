@@ -50,6 +50,12 @@ The Creator Companion's logs can be found in:
 Every time to start the Creator Companion, it will create a log file like this:
 `20230307T025652-log.txt`(Year, month, day, hours, minutes, seconds)
 
+## How can I change where the Creator Companion will be installed?
+You can use the command line to run the Installer with the `/DIR` argument to set its location if needed. For example, if I wanted to install the 2.1.3 version to my "F" drive, I could run the following command from the folder where the Setup file is located:
+```cmd
+VRChat_CreatorCompanion_Setup_2.1.3.exe /DIR = "F:/CreatorCompanion"
+```
+
 ## What do I do if I'm stuck on the Requirements Screen?
 
 Outdated versions of the Creator Companion may get stuck on the 'Requirements' screen. This usually happens if your settings file may be corrupted, or a package listing may have been downloaded incorrectly.
