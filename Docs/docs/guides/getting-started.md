@@ -35,6 +35,8 @@ If the Creator Companion cannot automatically find your installed Unity Editor, 
 
 ![Browse for the Unity Editor](/images/browse-unity-editor.png)
 
+Creator Companion 2.1.6 can try and install [Unity Editor 2019.4.31f1](https://unity.com/releases/editor/archive#download-archive-2019) for you, but it also supports 2019.4.31f1, 2019.4.31f1c1, 2019.4.30f1 and 2019.4.29f1 (all of which require the Android Build Support module to also be installed). If you browse for an existing Unity Editor installation and it is not compatible with your version of Creator Companion, a message will be shown at the bottom of Creator Companion listing the currently supported versions - you may need to enlarge the Creator Companion window to be able to view the whole message.
+
 ## Make New Projects
 
 To make a new project, just press "New" from the navigation bar on the left and choose which Template you'd like to work from:
