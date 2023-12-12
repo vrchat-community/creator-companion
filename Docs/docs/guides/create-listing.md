@@ -57,3 +57,10 @@ Take a look at the [example listing](https://vrchat-community.github.io/template
       * {valid VPM manifest} _(the full contents of `package.json)_
 
 If you serve these from a publicly accessible URL, the Creator Companion will be able to read it and provide the packages listed inside.
+
+:::caution
+
+Do not remove old versions of your VPM packages after publishing them.
+Removing old versions will break projects using [source control](https://vcc.docs.vrchat.com/vpm/source-control).
+
+:::

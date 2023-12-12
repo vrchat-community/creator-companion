@@ -42,6 +42,14 @@ vpm new <projectName> [template] [-p path]
 
 * **path**: Optional absolute path to use when creating the project. If not provided, the current directory will be used.
 
+### list projects
+
+Lists all the projects and their Unity Versions saved in the CreatorCompanion
+
+```console
+vpm list projects
+```
+
 ### check project
 Checks whether a given name or path points to a compatible VRChat project.
 
@@ -61,7 +69,7 @@ If the project is found, its type will be printed to the console.
 Returns a 0 if a project is found, and a 1 if it is not.
 
 ### resolve project
-Restores all VPM packages specified in the project's `vpm-manifest.json` file. This is done automatically by the [Resolver](/vpm/resolver) when you open a project in Unity, but you can also do it manually with this command.
+Restores all VPM packages specified in the project's `vpm-manifest.json` file, and deletes any LegacyPackages accidentally left in the project. This is done automatically by the [Resolver](/vpm/resolver) when you open a project in Unity, but you can also do it manually with this command.
 
 ```console 
 vpm resolve project [<name>]

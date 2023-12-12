@@ -59,14 +59,14 @@ const config = {
           defaultMode: 'dark',
           respectPrefersColorScheme: true,
         },
-        announcementBar: {
-          id: 'open_beta',
-          content:
-              '<b>Creator Companion 2.1.3 has been released! <a href="/news/release-2.1.3">Read the release notes.</a></b>',
-          backgroundColor: '#21af90',
-          textColor: '#000',
-          isCloseable: true,
-        },
+        // announcementBar: {
+        //   id: 'open_beta',
+        //   content:
+        //       '<b>Creator Companion 2.1.3 has been released! <a href="/news/release-2.1.3">Read the release notes.</a></b>',
+        //   backgroundColor: '#21af90',
+        //   textColor: '#000',
+        //   isCloseable: true,
+        // },
         navbar: {
           title: 'Creator Companion',
           logo: {
