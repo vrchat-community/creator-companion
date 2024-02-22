@@ -21,6 +21,7 @@ If your project is using [UdonSharp](https://udonsharp.docs.vrchat.com/), read o
     - `Logs`
     - `Assets\VRCSDK`
     - `Assets\Udon`
+    - `Assets\UdonSharp`
     - `Assets\VRChat Examples`
     - `Packages\com.vrchat.vrcsdk3`
     - `ProjectSettings\ProjectVersion.txt`

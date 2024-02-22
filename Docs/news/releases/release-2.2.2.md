@@ -1,6 +1,6 @@
 ---
 slug: release-2.2.2
-date: 2023-12-08
+date: 2023-12-08T14:32
 title: Release 2.2.2
 authors: [momo]
 tags: [release]

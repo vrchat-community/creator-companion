@@ -1,6 +1,13 @@
 # Version Matching
 
-We use [Semantic Versioning](https://semver.org/) for SDK packages managed by the VRChat Package Manager (VPM) instead of the date-based format used in the `.unitypackage` format. This document shows the matches between the two versions for the latest SDK releases.
+:::info
+
+Please refer to the VRChat SDK's [Release Documentation](https://creators.vrchat.com/releases/) page to see the latest information about SDK releases.
+
+
+:::
+
+The VCC uses [Semantic Versioning](https://semver.org/) for SDK packages managed by the VRChat Package Manager (VPM). Previously, the VRChat SDK used a date-based format for `.unitypackage` releases. This document shows how old `.unitypackage` releases matched with newer VPM releases.
 
 ## 3.2.0
 

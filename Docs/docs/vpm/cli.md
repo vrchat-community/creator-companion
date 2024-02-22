@@ -42,6 +42,30 @@ vpm new <projectName> [template] [-p path]
 
 * **path**: Optional absolute path to use when creating the project. If not provided, the current directory will be used.
 
+### add project
+
+Adds a project to the list of projects in the CreatorCompanion. This will allow you to open the project from the CreatorCompanion GUI and will show it in the list of projects in the CLI.
+
+```console
+vpm add project <project>
+```
+
+**Arguments**
+
+* **project**: The path to the unity project you want to add
+
+### remove project
+
+Removes a project from the list of projects in the CreatorCompanion
+
+```console
+vpm remove project <project>
+```
+
+**Arguments**
+
+* **project**: The path to the unity project you want to remove
+
 ### list projects
 
 Lists all the projects and their Unity Versions saved in the CreatorCompanion
@@ -85,11 +109,12 @@ If the project is found, its packages will be restored.
 
 Returns a 0 if the packages were successfully restored, and a 1 if they were not.
 
-### migrate project
+### migrate legacy
+
 Migrates projects created with the legacy .unitypackage SDKs to the new system if they use the SDK3 Worlds or Avatars unitypackages (SDK2 not supported). They can be Unity 2017, 2018 or 2019 projects. Will also migrate UdonSharp and CyanEmu to the new package-based versions.
 
 ```console 
-vpm migrate project [projectPath]
+vpm migrate legacy [projectPath]
 ```
 
 **Arguments**
@@ -101,6 +126,22 @@ vpm migrate project [projectPath]
 If the project is found and it can be migrated it will be automatically upgraded to the new system.
 
 Returns a 0 if a project is found and it can be migrated, and a 1 if it is not found or can't be migrated.
+
+### migrate 2022
+
+Migrates projects using Unity 2019 to Unity 2022. When the migration is done - you will need to open the project with Unity 2022 to finalize the migration.
+
+```console
+vpm migrate 2022 [projectPath]
+```
+
+**Arguments**
+* **projectPath**: The path to the unity project you want to migrate.
+
+**Options**
+* **--inplace**: Migrate project in place instead of creating a copy. Not recommended unless you have your own backup of the project
+
+Returns a 0 if a project is found and it can be migrated, and a 1 if it is not found or migration is not possible / failed.
 
 ## Packages
 [Packages](packages) are code and assets in a portable format, stored in in zip files and pulled into your project by the VRChat Package Manager.
@@ -131,6 +172,7 @@ vpm add package <packageName> [-p <project>]
 
 **Arguments**
 * **packageName**: The package to add. This can be the unique name of any package in the Official or Curated package listings, like `com.vrchat.worlds` or `com.vrchat.udonsharp`, or it can be a relative or absolute path to a local package.
+  * You can also add package version if you want to download a specific version of the package, e.g. `com.vrchat.worlds@3.4.1`
 
 **Options**
 * **-p|--project**: Specifies the project to which the package will be added. If no argument is provided, the method will look in the current directory. If provided, the value can be an absolute or relative path to a Unity Project, or the name of a project which you have added to your `userProjects` list. 
@@ -338,6 +380,32 @@ Checks:
 * Windows Registry
 * Unity Hub (by running it with the args `-- --headless editors -i`
 * Subdirectories of the Unity Hub
+
+## Folder commands
+
+### open settingsFolder
+
+Opens the folder where the settings file is stored.
+
+```console
+vpm open settingsFolder
+```
+
+### open projectsFolder
+
+Opens the default project creation folder
+
+```console
+vpm open projectsFolder
+```
+
+### open backupsFolder
+
+Opens the folder where backups are stored
+
+```console
+vpm open backupsFolder
+```
 
 ## Mac and Linux Support
 The only fully-supported platform at the moment is Windows 10.
