@@ -18,7 +18,7 @@ There are three official packages:
 These packages have been reviewed by VRChat and found to be especially useful and reasonably safe to use. We're building a submission process to have your package reviewed and included, it is invite-only for now.
 
 ### Community Packages
-We will introduce a method to host and distribute listings of Community Packages. We will include guidelines on what sorts of packages can be distributed, and a way to submit your own community listing. They are not guaranteed to be usable or safe.
+Users can add [Community Repositories](/guides/community-repositories) to the VCC, allowing them to add packages from other creators to their Unity projects. Creators can [convert their existing assets to a VPM package](/guides/convert-unitypackage) or [create a package listing](/guides/create-listing) with our [GitHub template package](https://github.com/vrchat-community/template-package).
 
 ### User Packages
 You can make your own library of VPM-compatible packages to use in your projects. They are as usable and safe as you make them! This feature is also helpful when developing a package - turning it from a prefab or .unitypackage file from before into the new format which can be distributed through the Creator Companion. You can use these packages to test the structure and manifest of your package before publishing. To add a user package, navigate to the 'Settings' screen, press the 'Add' button underneath 'User Packages' and choose a folder which contains a package (or several packages). If they are valid, they will be added to the listing here and on the screen where you add and remove packages to your project.
