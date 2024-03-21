@@ -19,6 +19,7 @@ The Package Manager can help you do the following:
 * Click "Create Project" once you are happy with your project name and location.
 * At this point, your project will be created. Wait for the initial import to finish. It may take a few minutes as Unity imports all the specified packages, processes the assets, and runs a few special commands the Package Manager has passed along to it.
 * If successful, the app will transition to the "Manage Packages" screen for your new project, and a list of installed and available Packages.
+* To learn more about creating VRChat projects, visit the [VRChat's documentation for creators](https://creators.vrchat.com/sdk/).
 
 
 ### What actually happens when you click on Create?

@@ -1,6 +1,13 @@
 # Frequently Asked Questions
 ## What does 'VCC' mean?
-**V**RChat **C**reator **C**ompanion. It's the official tool for creating and updating Unity projects for VRChat. Read more about the Creator Companion on our [glossary page](https://vcc.docs.vrchat.com/guides/glossary/). 
+**V**RChat **C**reator **C**ompanion. It's the official tool for creating and updating Unity projects for VRChat. Read more about the Creator Companion on our [glossary page](https://vcc.docs.vrchat.com/guides/glossary/).
+
+## Where are backups stored?
+When you click "Make Backup" in the VCC, a `.zip` file of your project will be saved in `%LocalAppData%/VRChatCreatorCompanion/Logs/Project Backups`. You can change this location in Settings, under the General tab - scroll down and look for "Backups".
+
+## How do I restore a backup?
+Extract the backup `.zip` file from `%LocalAppData%/VRChatCreatorCompanion/Logs/Project Backups` anywhere on your PC, e.g. `Documents`. Click "Add existing" project in the VCC to add your backup project.
+
 ## Why is my project missing packages? Or why can't I create a backup?
 The most common cause we've seen for this is that **the path to your project is longer than Windows can handle**.
 * Try creating your project at a path with fewer overall characters, like
@@ -56,14 +63,8 @@ You can use the command line to run the Installer with the `/DIR` argument to se
 VRChat_CreatorCompanion_Setup_2.1.3.exe /DIR = "F:/CreatorCompanion"
 ```
 
-## What do I do if I'm stuck on the Requirements Screen?
-
-Outdated versions of the Creator Companion may get stuck on the 'Requirements' screen. This usually happens if your settings file may be corrupted, or a package listing may have been downloaded incorrectly.
-![image](https://user-images.githubusercontent.com/737888/204419137-d4a3a4ee-5035-4540-a27a-f871531bee7c.png)
-To fix this, please download the newest version of the Creator Companion at https://vrchat.com/download/vcc and follow the steps below.
-
 ## What do I do if my settings file is invalid?
-If your settings file is corrupted (either through manual editing or through a bug), the Creator Companion may not launch correctly. You may see an error message, or the Creator Companion may fail to launch.
+If your settings file is corrupted (either through manual editing or through a bug), the Creator Companion may not launch correctly. You may see an error message, the Creator Companion may fail to launch, or you may be unable to use the Creator Companion properly. When this happens, try resetting your settings file by following the steps below.
 
 You can find the settings file at `%LocalAppData%\VRChatCreatorCompanion\settings.json` or at `C:\Users\You\AppData\Local\VRChatCreatorCompanion\settings.json`.
 

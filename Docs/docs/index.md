@@ -12,7 +12,7 @@ The Creator Companion is available at [https://vrchat.com/home/download](https:/
 The Creator Companion will be installed into your "%LOCALAPPDATA%\Programs" folder by default (e.g. `C:\Users\UserName\AppData\Local\Programs`). You can change this during installation if you like. You can delete the installer once the installation is complete.
 
 ## Requirements
-The Creator Companion will check that Unity and Unity Hub are installed on launch. If it is needed, you will be guided through how to install both. If you follow these instructions, you will get the latest version of the Unity Hub and the current VRChat-SDK-Compatible version of Unity.
+When you launch the Creator Companion, it checks whether Unity and Unity Hub are installed. If not, it shows you how to install them. If you follow these instructions, you will get the latest version of the Unity Hub and a [version of Unity compatible with the VRChat SDK](https://creators.vrchat.com/sdk/upgrade/current-unity-version).
 
 The Creator Companion is only fully-supported on Windows 10 (Windows 11 might work but it's not fully tested). The [CLI has some functionality on Mac and Linux](vpm/cli#mac-and-linux-support).
 
