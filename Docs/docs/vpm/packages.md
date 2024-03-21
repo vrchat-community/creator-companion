@@ -48,7 +48,7 @@ VPM package manifests have a few differences from regular Unity manifests:
 3. The _optional_ `legacyFolders` property can be used to detect and migrate from the old .unitypackage version of your project to this version. Any folders found with a matching path will be removed. You can include the GUID as the object's value if you want to search for and find the folder even if it was moved from its original location. if no GUID is provided, it will only match the path.
 4. The _optional_ `legacyFiles` property is used as the `legacyFolders` object above.
 5. The _optional_ `legacyPackages` property is used when a secondary package has been integrated into a primary one, and the secondary package should be removed from the manifest and the project. For example, the VRChat Worlds package now contains the ClientSim and UdonSharp packages, so they are listed here to be removed from the project when the VRChat Worlds package is added.
-5. The _optional_ `zipSHA256` property is used to verify the integrity of the zip file you provide. Currently, it is only used for cache invalidation. But we might start enforcing hash checks in the future to ensure the integrity of the packages the users download.
+5. The _optional_ `zipSHA256` property is used to verify the integrity of the zip file you provide. The checksum should be added to the manifest of the [repository listing](https://vcc.docs.vrchat.com/vpm/repos), not in the package's `package.json`. Currently, the `zipSHA256` property is only used for cache invalidation. But we might start enforcing hash checks in the future to ensure the integrity of the packages the users download.
 6. The _optional_ `changelogUrl` property can be used to point to a changelog file for your package. This is not currently used by the VCC, but it might be utilized in the future.
 
 Altogether that makes the list of required fields look like this:
@@ -116,7 +116,7 @@ The 'Branding' version does not change frequently and represents the major shift
 
 For example, if a new system for Avatars introduces an incompatible change such that SDK3 Avatars cannot be migrated, the Avatars SDK would be incremented to 4.0.0. 
 
-Udon 2 has a migration and code-reuse path from Udon. Because of this, the 'Branding' version would be incremented to 3.5.0 instead of 4.0.0. (version numbers are subject to change based on release cadence).
+Udon 2 has a migration and code-reuse path from Udon. Because of this, the 'Branding' version would be incremented to 3.x.0 instead of 4.0.0. (version numbers are subject to change based on release cadence).
 
 #### Breaking
 The 'Breaking' version is incremented when incompatible API changes occur, so packages that rely on the previous functionality must be updated before they work properly. This is how both creators and package creators are protected from confusion over broken packages due to SDK updates.

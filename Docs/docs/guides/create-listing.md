@@ -17,7 +17,7 @@ The easiest way to publish packages and listings is with [GitHub](https://github
 
 ### 1. Create a New Listing Repo
 
-Press [![Use This Template](https://user-images.githubusercontent.com/737888/185467681-e5fdb099-d99f-454b-8d9e-0760e5a6e588.png)](https://github.com/vrchat-community/template-package-listing/generate)
+Log into your account on https://github.com/. Then, press [![Use This Template](https://user-images.githubusercontent.com/737888/185467681-e5fdb099-d99f-454b-8d9e-0760e5a6e588.png)](https://github.com/vrchat-community/template-package-listing/generate)
 to start a new GitHub project based on the official Package Listing Template, and follow the directions there to finish creating your own version. Then you just need to modify the source.json file to point to the packages you want to list.
 
 ### 2. Choose a Compatible GitHub Repository

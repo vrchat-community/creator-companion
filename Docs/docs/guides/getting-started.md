@@ -1,17 +1,21 @@
 # Getting Started
 
-If you're starting from scratch, here's what you'll need to do:
+This guide will show you how to install the VRChat Creator Companion (VCC) and how to use it for the first time. Here's what you'll need:
+
+- A PC that fulfills the [Unity Editor system requirements](Unity Editor system requirements)
+- Windows 10/11 for the full GUI or [Linux/macOS](https://vcc.docs.vrchat.com/vpm/cli/#mac-and-linux-support) for a command-line interface.
+- An internet connection
 
 ## Download
 The Creator Companion is available at [https://vrchat.com/home/download](https://vrchat.com/home/download). 
 
-You can always download the latest version from this direct url as well: [https://vrchat.com/download/vcc](https://vrchat.com/download/vcc).
+You can always download the latest version from this direct URL as well: [https://vrchat.com/download/vcc](https://vrchat.com/download/vcc).
 
 ## Install
 Run the installer from the above step, which will install the Creator Companion into your "%LOCALAPPDATA%\Programs" folder by default (e.g. `C:\Users\UserName\AppData\Local\Programs`). You can change this during installation if you like. You can delete the installer once the installation is complete.
 
 ## Set Up
-The Creator Companion will check that Unity is installed on launch. If it is needed, a button will be presented to easily Unity Hub and the Unity Editor install it. By following the installation instructions inside the Creator Companion, you will get the latest version of the Unity Hub and the current VRChat-SDK-Compatible version of Unity.
+The Creator Companion will check that Unity is installed on launch. If it is needed, you'll see a button to help you install Unity Hub and the Unity Editor. By following the installation instructions inside the Creator Companion, you will get the latest version of the Unity Hub and the current VRChat-SDK-Compatible version of Unity.
 
 To install Unity Hub, [follow these steps](https://learn.unity.com/tutorial/install-the-unity-hub-and-editor).
 
