@@ -2,7 +2,7 @@
 
 This guide will show you how to install the VRChat Creator Companion (VCC) and how to use it for the first time. Here's what you'll need:
 
-- A PC that fulfills the [Unity Editor system requirements](Unity Editor system requirements)
+- A PC that fulfills the [Unity Editor system requirements](https://docs.unity3d.com/Manual/system-requirements.html)
 - Windows 10/11 for the full GUI or [Linux/macOS](https://vcc.docs.vrchat.com/vpm/cli/#mac-and-linux-support) for a command-line interface.
 - An internet connection
 
