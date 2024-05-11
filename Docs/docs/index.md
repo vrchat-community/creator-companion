@@ -26,6 +26,6 @@ When suggesting changes, GitHub will ask you to
 1. [Sign up](https://github.com/join) for a free GitHub account,
 2. [Create a fork](https://github.com/vrchat-community/creator-companion/fork) of this repository,
 3. [Edit the page](https://github.com/vrchat-community/creator-companion/edit/main/Docs/docs/index.md) with GitHub's built-in Markdown editor,
-4. And [submit a Pull Request](https://github.com/vrchat-community/creator-companion/compare) to have your changes reviewed and merged into our documentation.
+4. And [submit a Pull ](Requesthttps://github.com/vrchat-community/creator-companion/compare) to have your changes reviewed and merged into our documentation.
 
 Thank you for your help!
