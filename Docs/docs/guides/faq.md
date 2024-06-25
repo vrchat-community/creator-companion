@@ -3,10 +3,10 @@
 **V**RChat **C**reator **C**ompanion. It's the official tool for creating and updating Unity projects for VRChat. Read more about the Creator Companion on our [glossary page](https://vcc.docs.vrchat.com/guides/glossary/).
 
 ## Where are backups stored?
-When you click "Make Backup" in the VCC, a `.zip` file of your project will be saved in `%LocalAppData%/VRChatCreatorCompanion/Logs/Project Backups`. You can change this location in Settings, under the General tab - scroll down and look for "Backups".
+When you click "Make Backup" in the VCC, a `.zip` file of your project will be saved in `%LocalAppData%/VRChatCreatorCompanion/Project Backups`. You can change this location in Settings, under the General tab - scroll down and look for "Backups".
 
 ## How do I restore a backup?
-Extract the backup `.zip` file from `%LocalAppData%/VRChatCreatorCompanion/Logs/Project Backups` anywhere on your PC, e.g. `Documents`. Click "Add existing" project in the VCC to add your backup project.
+Extract the backup `.zip` file from `%LocalAppData%/VRChatCreatorCompanion/Project Backups` anywhere on your PC, e.g. `Documents`. Click "Add existing" project in the VCC to add your backup project.
 
 ## Why is my project missing packages? Or why can't I create a backup?
 The most common cause we've seen for this is that **the path to your project is longer than Windows can handle**.
