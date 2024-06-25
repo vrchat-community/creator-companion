@@ -364,7 +364,7 @@ vpm install unity
 
 Specifically, it runs the Unity Hub with these args:
 ```console
--- --headless install -v 2022.3.6f1 -c b9e6e7e9fa2d -m android
+-- --headless install -v 2022.3.22f1 -c b9e6e7e9fa2d -m android
 ``` 
 
 returns 0 if Unity was installed and 1 if it was not.
@@ -420,7 +420,7 @@ If you're having trouble using the CLI on non-Windows platforms, you can check o
 ### Mac Setup
 
 1. Follow the directions under [Installation & Updating](#installation--updating) above.
-2. Install [Unity Hub for Mac](https://public-cdn.cloud.unity3d.com/hub/prod/UnityHubSetup.dmg) and then [Unity 2022.3.6f1](unityhub://2022.3.6f1/b9e6e7e9fa2d).
+2. Install [Unity Hub for Mac](https://public-cdn.cloud.unity3d.com/hub/prod/UnityHubSetup.dmg) and then [Unity 2022.3.22f1](unityhub://2022.3.22f1/).
 3. Open a terminal and run [vpm install templates](#install-templates) to install the latest VRChat project templates.
 4. Run [vpm check hub](#check-hub) to find and save the location of Unity Hub. For now, we assume it has been installed to its default location of `/Applications/Unity Hub.app/Contents/MacOS/Unity Hub`. If this is not the case, you'll need to open your settings file and set the `pathToUnityHub` to the correct absolute path manually. Make sure to target the executable inside of the UnityHub.app as shown in the default path.
 5. Run [vpm check unity](#check-unity) to find and save the location of the Unity Editor. VPM will use the Hub to find and save the path(s), so make sure VPM can find the Hub first.
