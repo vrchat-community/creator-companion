@@ -1,7 +1,7 @@
 ---
 slug: release-2.4.0
-date: 2024-10-10
-title: Release 2.4.0-beta.1
+date: 2024-12-04
+title: Release 2.4.0
 authors: [momo]
 tags: [release]
 ---
@@ -31,6 +31,9 @@ This release is focused on quality-of-life improvements and bugfixes.
     - Download for macOS: [Intel Mac](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-8.0.8-macos-x64-installer), [Apple Silicon Mac](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-8.0.8-macos-arm64-installer).
   - For macOS, the VCC CLI keeps the current data path used settings and cache files: `$HOME/.local/share/VRChatCreatorCompanion`
     - This addresses [#522](https://github.com/vrchat-community/creator-companion/issues/522) and [#532](https://github.com/vrchat-community/creator-companion/issues/532).
+  - Adding `api.github.com` request headers for community repositories is now faster.
+    - The `Accept` and `Authorization` headers are now pre-filled, so you only need to insert the token.
+    - All visible headers are now automatically added without clicking the "Add" button each time.
 
 ## Bugfixes
 
@@ -42,6 +45,7 @@ This release is focused on quality-of-life improvements and bugfixes.
   - Fixes [#526](https://github.com/vrchat-community/creator-companion/issues/526).
 - Fixed an issue where a failure to parse a Unity Editor version via VCC CLI would result in a crash.
   - Addresses one of the issues mentioned in [#408](https://github.com/vrchat-community/creator-companion/issues/408#issuecomment-2338863367).
+- The Creator Companion now correctly updates the `localPath` values in the `settings.json` for the `userRepos` in cases where the path is wrong or the repo file does not exist.
 
 ## Feedback
 
@@ -49,4 +53,8 @@ Please report [issues to the Creator Companion repo on GitHub](https://github.co
 
 ## Download
 
-While this version is in Beta, you can download _a portable version_ here: [VCC Portable 2.4.0 beta 1](https://github.com/vrchat-community/creator-companion/releases/download/2.4.0-beta.1/web_vcc_2.4.0-beta.1_Release_Portable.zip).
+If you already installed the Creator Companion, simply open it and click **Update**.
+
+To install the Creator Companion, download the latest version from the [official download page](https://vrchat.com/home/download).
+
+However, if a direct link to this version is needed, it can be found at [VRChat_Creator_Companion_Setup_2.4.0.exe](https://vrcpm.vrchat.cloud/vcc/Builds/2.4.0/VRChat_CreatorCompanion_Setup_2.4.0.exe).

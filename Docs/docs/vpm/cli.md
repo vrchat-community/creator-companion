@@ -3,7 +3,7 @@
 The VRChat Package Manager is available as a Command Line Interface application, for advanced users and automation.
 
 ## Installation & Updating
-You'll need the [.NET 6 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/6.0) installed.
+You'll need the [.NET 8 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/8.0) installed.
 Then just open a terminal and type:
 
 ```console
