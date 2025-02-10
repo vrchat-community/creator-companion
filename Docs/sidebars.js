@@ -37,6 +37,11 @@ const sidebars = {
         'guides/version-matching',
         'guides/community-repositories',
         'guides/create-listing',
+        {
+          type: 'category',
+          label: 'Upgrading',
+          items: ['guides/upgrading/github-actions-upgrade']
+        }
       ],
       collapsed: false,
     },
