@@ -11,6 +11,14 @@ Removing old versions will break projects using [source control](https://vcc.doc
 
 :::
 
+:::caution
+
+### Upgrade Notice
+
+If you have created listings using the template repositories prior to January 23, 2025, please follow [this update guide](/guides/upgrading/github-actions-upgrade) to ensure your listings continue to work correctly.
+
+:::
+
 ## Using GitHub
 
 The easiest way to publish packages and listings is with [GitHub](https://github.com/). You can do everything you need with a free account. If you use another source control service or just want to roll your own approach, see [Using Your Own Services](#using-your-own-services) below.
