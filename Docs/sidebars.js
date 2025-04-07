@@ -71,8 +71,9 @@ const sidebars = {
       id: 'legacy-sdk',
     },
     {
-      type: 'doc',
-      id: 'roadmap',
+      type: 'link',
+      label: 'Roadmap',
+      href: 'https://creators.vrchat.com/roadmap',
     },
   ],
 

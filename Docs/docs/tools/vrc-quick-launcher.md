@@ -6,6 +6,12 @@ You can find the quick launcher by open the Creator Companion and opening the "T
 
 ![VRC Quick Launcher GUI](/images/vrc-quick-launcher.png)
 
+
+## Requirements
+
+- The Quick Launcher supports Windows 10 and 11 (64-bit).
+- VRChat must already be installed. If you installed VRChat in an unusual location, click "Browse" to locate it.
+
 ## Features
   * Support for multiple VRChat exes to use for launching (will default to the Steam one if it exist) and will remember up to the last 10 used, this means you can easily access and use VRChat & VRChat - Dev for example.
   * All VRChat launch options are available directly in the UI.

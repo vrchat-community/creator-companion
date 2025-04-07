@@ -214,13 +214,18 @@ We also provide the templates as git repositories you can use directly. [Here's 
 :::
 
 ### install templates
-Installs the latest version of the VRChat templates to `AppData/Local/VRChatCreatorCompanion/VRCTemplates`, overwriting files that are there. Useful if you're using the CLI without having installed the VCC GUI. 
+Installs the latest version of the VRChat templates. This command is useful if you're using the CLI without having installed the VCC GUI. 
 
 ```console 
 vpm install templates
 ```
 
-Note that this will clear out the existing template first - user templates should be put into `AppData/Local/VRChatCreatorCompanion/Templates` instead.
+The templates are downloaded to the following location, overwriting existing files:
+
+- Windows: `AppData/Local/VRChatCreatorCompanion/VRCTemplates` 
+- macOS: `~/.local/share/VRChatCreatorCompanion/VRCTemplates` 
+
+Note that this command removes existing templates first. If you have user templates, save them in `AppData/Local/VRChatCreatorCompanion/Templates` instead.
 
 ### list templates
 Prints out the names and paths of the Official VRChat Templates, and the paths of the installed User Templates.

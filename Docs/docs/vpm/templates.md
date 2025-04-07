@@ -41,7 +41,14 @@ You can also add your own templates to easily start projects with your favorite 
 ```
 The only required fields are "name" and "displayName" for now. Note that "defaultScene" is part of the spec from Unity but does not appear to work.
 
-4a. If my Hype Generator tool was available as a VPM-compatible package in the VCC, I could add it to the vpmDependencies list in HypeWorld\Packages\vpm-manifest.json:
+:::info
+
+`"version"` uses semantic versioning. Visit the NPM docs to [learn the basics](https://docs.npmjs.com/about-semantic-versioning) or try the [SemVer calculator](https://semver.npmjs.com/).
+
+:::
+
+4.
+  a.  If my Hype Generator tool was available as a VPM-compatible package in the VCC, I could add it to the vpmDependencies list in HypeWorld\Packages\vpm-manifest.json:
 ```json
 {
 	"dependencies" : {
@@ -54,7 +61,8 @@ The only required fields are "name" and "displayName" for now. Note that "defaul
 	}
 }
 ```
-4b. If this tool is not yet migrated to VPM and instead should live in the Assets folder, I can instead just copy it into `HypeWorld\Assets`. Everything in the Assets, Packages and ProjectSettings folders will be copied into my new project. Make sure that you *don't* include the file ProjectSettings/ProjectVersion.txt. This is not included in the World template but it will be in your ProjectSettings folder if you're copying files from an existing project.
+4.
+  b. If this tool is not yet migrated to VPM and instead should live in the Assets folder, I can instead just copy it into `HypeWorld\Assets`. Everything in the Assets, Packages and ProjectSettings folders will be copied into my new project. Make sure that you *don't* include the file ProjectSettings/ProjectVersion.txt. This is not included in the World template but it will be in your ProjectSettings folder if you're copying files from an existing project.
 
 With that folder in place, your template should now show up on the right side of the Templates screen when choosing to create a New Project:
 ![User Templates](/images/user-templates.png)

@@ -1,23 +1,35 @@
 # Creator Companion
 
-## What Is It?
-The VRChat Creator Companion (VCC) is the new Entry Point for creating things for VRChat! It currently includes our new [VRChat Package Manager (VPM)](vpm), and houses official packages, community packages, learning resources, tools, and more!
+The VRChat Creator Companion (VCC) provides everything you need for creating VRChat worlds and avatars in Unity!
+
+## Features
+
+- **[VRChat Package Manager](vpm) (VPM)** - Manage your VRChat packages easily.
+- **[Official packages](/vpm/packages)** - VRChat's SDK for creating worlds and avatars in Unity.
+- **[Community packages](vpm/curated-community-packages)** - Access tools and assets created by other users.
+- **Learning resources & Tools** - Get tutorials, links, and the [Quick Launcher](https://docs.vrchat.com/docs/vrc-quick-launcher).
+
+Watch the video below to learn how to get started.
 
 <iframe width="100%" class="ratio-16-by-9" src="https://www.youtube-nocookie.com/embed/0u1g0TYoJsU" title="YouTube video player" frameborder="0" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ## Download It
-The Creator Companion is available at [https://vrchat.com/home/download](https://vrchat.com/home/download). You can always download the latest version from this direct url as well: [https://vrchat.com/download/vcc](https://vrchat.com/download/vcc).
+The Creator Companion is available [on the VRChat website](https://vrchat.com/home/download). You can always [download the latest version directly](https://vrchat.com/download/vcc).
 
 ## Installer
 The Creator Companion will be installed into your "%LOCALAPPDATA%\Programs" folder by default (e.g. `C:\Users\UserName\AppData\Local\Programs`). You can change this during installation if you like. You can delete the installer once the installation is complete.
 
 ## Requirements
-When you launch the Creator Companion, it checks whether Unity and Unity Hub are installed. If not, it shows you how to install them. If you follow these instructions, you will get the latest version of the Unity Hub and a [version of Unity compatible with the VRChat SDK](https://creators.vrchat.com/sdk/upgrade/current-unity-version).
-
-The Creator Companion is only fully-supported on Windows 10 (Windows 11 might work but it's not fully tested). The [CLI has some functionality on Mac and Linux](vpm/cli#mac-and-linux-support).
+- Unity Hub and Unity must be installed.
+    - When you launch the Creator Companion, it checks whether Unity and Unity Hub are installed. If not, it shows you how to install them.
+    - If you follow these instructions, you will get the latest version of the Unity Hub and a [version of Unity compatible with the VRChat SDK](https://creators.vrchat.com/sdk/upgrade/current-unity-version).
+- The Creator Companion supports Windows 10 and 11 (64-bit).
+    - The [CLI has some functionality on Mac and Linux](vpm/cli#mac-and-linux-support).
+    - Other operating systems are not fully supported.
+- To upload worlds and avatars, you must create an account on the [VRChat webite](https://vrchat.com/home/).
 
 ### Unity Editor Versions
-The Creator Companion requires our currently supported Unity Version. It will automatically try to find it on your hard drive, or it can help you install it.
+The Creator Companion automatically installs VRChat's [currently supported Unity version](https://creators.vrchat.com/sdk/upgrade/current-unity-version). If you already installed the correct version, the Creator Companion finds it automatically.
 
 ### Suggesting changes
 Our documentation is public on GitHub, and we appreciate contributions from our community! Click 'Edit this page' at the bottom of any page to suggest changes.
