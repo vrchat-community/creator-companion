@@ -13,6 +13,6 @@ These samples are not allowed to be edited, and will show warnings if you try to
 
 Some packages may use the Unity Package Manager's sample-importing functionality. For these, you can find them from within the "Unity Package Manager" window, within the "In Project" set from the dropdown in the upper-left.
 
-![Importing Samples](/images/import-samples.png)
+![Importing Samples](import-samples_revised.png)
 
 Importing a sample using one of these buttons will unpack it into a folder like `Assets/Samples/packageName/1.0.0/SampleName`. These can be safely edited and will not be overwritten by importing a sample from a newer version of a package, since it is placed in a version-specific folder.
