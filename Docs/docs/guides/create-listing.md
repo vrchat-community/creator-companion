@@ -6,13 +6,6 @@ You can create and share your own custom package listings, including your own pa
 
 :::caution
 
-Do not remove old versions of your VPM packages after publishing them.
-Removing old versions will break projects using [source control](https://vcc.docs.vrchat.com/vpm/source-control).
-
-:::
-
-:::caution
-
 ### Upgrade Notice
 
 If you have created listings using the template repositories prior to January 23, 2025, please follow [this update guide](/guides/upgrading/github-actions-upgrade) to ensure your listings continue to work correctly.
@@ -50,6 +43,14 @@ To include packages which are hosted somewhere else, you'll edit the 'packages' 
 ### 4. Run the Build Repo Listing Action
 This should happen automatically whenever you edit source.json directly on GitHub on your main branch, or push changes to source.json to your main branch.
 
+:::caution
+
+Do not remove old versions of your VPM packages after publishing them.
+Removing old versions will break projects using [source control](https://vcc.docs.vrchat.com/vpm/source-control).
+
+:::
+
+
 ## Using Your Own Services
 
 Take a look at the [example listing](https://vrchat-community.github.io/template-package/index.json). In order to be valid, you need the following fields:
@@ -65,10 +66,3 @@ Take a look at the [example listing](https://vrchat-community.github.io/template
       * {valid VPM manifest} _(the full contents of `package.json)_
 
 If you serve these from a publicly accessible URL, the Creator Companion will be able to read it and provide the packages listed inside.
-
-:::caution
-
-Do not remove old versions of your VPM packages after publishing them.
-Removing old versions will break projects using [source control](https://vcc.docs.vrchat.com/vpm/source-control).
-
-:::
