@@ -28,8 +28,12 @@ Yes. The VCC changes how the VRChat SDK is imported, but `.unitypackage` legacy 
 If you create assets for other users, make sure to test them with these new SDKs to discover and fix any compatibility issues. You may need to create new versions of your assets if you're referencing VRChat's built-in assets, or if your Udon programs use older versions of [UdonSharp](https://udonsharp.docs.vrchat.com).
 The VCC also allows you to distribute packages using the new VPM format, making it even easier for your users to install and update your custom content. Read the [Packages](https://vcc.docs.vrchat.com/vpm/packages) page to learn more.
 
-## What do I do if Webview2 is not installed correctly?
-![VRC Quick Launcher GUI](/images/webview2-error.png)
+## What do I do if I only see a blank white screen when I launch the VCC?
+![Blank White Screen in VCC](/images/vcc-white.png)
+ 
+Try [reinstalling Webview2](#fix-reinstall-webview2). If that doesn't work, you can instead [use your web browser](#workaround-use-a-web-browser) to see the UI.
+
+### Fix: Reinstall Webview2
 The Creator Companion uses Webview2 to render its user interface. When you launch the Creator Companion, it will attempt to install it automatically.
 
 If you previously removed Microsoft Edge from your system, the Creator Companion may fail to launch correctly. WebView2 is usually installed alongside Microsoft Edge. 
@@ -39,6 +43,14 @@ This can usually be fixed by properly reinstalling Webview2. If Microsoft Edge r
 Download links
 - Webview2: https://developer.microsoft.com/en-us/microsoft-edge/webview2
 - Microsoft Edge: https://www.microsoft.com/en-us/edge
+
+### Workaround: Use a Web Browser
+
+If that doesn't fix your issue, there is a workaround to see the UI:
+
+1. Launch the Creator Companion and leave it on the white screen.
+
+2. Then visit http://localhost:5476/ in any working web browser. This essentially uses your web browser as the display while the app still handles all the functionality.
 
 ## I just installed Unity Hub and Unity. Why is Unity not launching?
 
