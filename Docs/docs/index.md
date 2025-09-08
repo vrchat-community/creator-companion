@@ -26,7 +26,7 @@ The Creator Companion will be installed into your "%LOCALAPPDATA%\Programs" fold
 - The Creator Companion supports Windows 10 and 11 (64-bit).
     - The [CLI has some functionality on Mac and Linux](vpm/cli#mac-and-linux-support).
     - Other operating systems are not fully supported.
-- To upload worlds and avatars, you must create an account on the [VRChat webite](https://vrchat.com/home/).
+- To upload worlds and avatars, you must create an account on the [VRChat website](https://vrchat.com/home/).
 
 ### Unity Editor Versions
 The Creator Companion automatically installs VRChat's [currently supported Unity version](https://creators.vrchat.com/sdk/upgrade/current-unity-version). If you already installed the correct version, the Creator Companion finds it automatically.
