@@ -95,7 +95,16 @@ The rest of the fields are optional, but we recommend you fill them out as much 
 We also **highly recommend** listing the `license` of your package in the package manifest. Unity requires this field if you do not have LICENSE file in your project, but we recommend specifying it even if you do have a LICENSE file. This field might be displayed in the VCC interface in the future. The license should use the [SPDX format](https://spdx.org/licenses/).
 
 ### Versions and Ranges
+
 The VCC improves upon the functionality provided by the Unity Package Manager by supporting dependencies-of-dependencies for packages and treating dependency versions as ranges. We use the [SemanticVersioning](https://github.com/adamreeve/semver.net) C# library to do this, which supports [Semantic Versioning 2.0.0](https://semver.org/) and [a wide variety of range specifiers](https://github.com/adamreeve/semver.net#ranges). This format also supports [Pre-release Packages](#prerelease-packages).
+
+By editing the values of `versionToCheck` and `rangeToCheck` variables below, you can see how the library works. `versionToCheck` is the version of the package you would like to validate against the `rangeToCheck`.
+
+The following snippet uses the same library as the VPM, so its behaviour should match that of the Creator Companion and our other VPM-based tools.
+
+<iframe width="100%" height="600" style={{margin: "0 auto"}} src="https://dotnetfiddle.net/Widget?Languages=CSharp&CSharp_FiddleId=Ug1Mn0" frameborder="0"></iframe>
+
+### VRChat's Official Packages versioning strategy
 
 However, VRChat's packages haven't been following the Semantic Versioning rules for a few reasons:
 * The first version was 3.0.0 instead of 1.0.0, to clarify that the packages are a continuation of previous VRChat SDK3 releases.
@@ -104,11 +113,12 @@ However, VRChat's packages haven't been following the Semantic Versioning rules 
 
 We want to follow semantic versioning for VRChat's packages eventually. But in the meantime, we're documenting our best explanation of what we've been doing so you can keep your own packages compatible with ours.
 
-###  Branding.Breaking.Bumps
+### Branding.Breaking.Bumps
 
 This versioning system is similar to semantic versioning (Major.Minor.Patch) with notable differences:
 
 #### Branding
+
 The 'Branding' version does not change frequently and represents the major shifts between incompatible systems.
 
 - 1.x was custom scripting,
@@ -120,12 +130,15 @@ For example, if a new system for Avatars introduces an incompatible change such 
 Udon 2 has a migration and code-reuse path from Udon. Because of this, the 'Branding' version would be incremented to 3.x.0 instead of 4.0.0. (version numbers are subject to change based on release cadence).
 
 #### Breaking
+
 The 'Breaking' version is incremented when incompatible API changes occur, so packages that rely on the previous functionality must be updated before they work properly. This is how both creators and package creators are protected from confusion over broken packages due to SDK updates.
 
 #### Bumps
+
 The 'Bumps' version is incremented for every new release (unless it is a 'Breaking' or 'Branding' release). Most releases are a combination of bug fixes and new features.
 
 If you have a package that depends on public SDK APIs, we recommend declaring your dependency using the latest 'Breaking' version with an `x` for the 'Bump' version, like this:
+
 ```json
 "vpmDependencies" : {
   "com.vrchat.avatars" : "3.5.x"
@@ -137,6 +150,7 @@ The above example means that your package requires the Avatars SDK and should wo
 Doing this means you will need to test and create a new release of your package whenever the VRChat SDK moves to a new breaking version, but it ensures the users of your packages are aware of any potential incompatibilities.
 
 #### The Public API for the SDK
+
 The SDK 3.3.0 included VRChat's first [Public SDK API](https://creators.vrchat.com/sdk/public-sdk-api/). The interfaces and methods in this API will not break when an SDK release increments the 'Bump' version. The VRChat team will work on expanding the Public API based on properties, fields, etc. commonly used by community package creators.
 
 We encourage VPM package creators to use proper semantic versioning for their own packages. Start at version 1.0.0 (not version 3.0.0 like VRChat's packages). 
