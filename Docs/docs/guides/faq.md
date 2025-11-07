@@ -100,7 +100,12 @@ You can do so in two ways:
 1. Add local packages that already exist on your computer. You can do so in the User Packages section of the Packages tab on the Settings page.
 2. Add community packages by installing a Community Repository. To add new repositories to the Creator Companion [take a look at this guide](/guides/community-repositories).
 
+## Why is my screen stuck on the welcome screen?
+
+
+Go to http://localhost:5476/ Then click inspect then console then report it to vrchat
+ 
 ## Where can I ask more questions?
 Make sure to read the [VCC documentation](https://vcc.docs.vrchat.com/) to learn more about the Creator Companion.
 
-Please submit bug reports and feature requests to our [GitHub issue tracker](https://vcc.docs.vrchat.com/guides/bugs-features/). If you'd like to talk to other creators about the VCC, head to the official [VRChat Discord server](https://discord.com/invite/vrchat).
+Please submit bug reports and feature requests to our [GitHub issue tracker](https://vcc.docs.vrchat.com/guides/bugs-features/). If you'd like to talk to other creators about the VCC, head to the official [VRChat Discord server](https://discord.com/invite/vrchat). 
