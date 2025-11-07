@@ -103,7 +103,13 @@ You can do so in two ways:
 ## Why is my screen stuck on the welcome screen?
 
 
-Go to http://localhost:5476/ Then click inspect then console then report it to vrchat
+Go to http://localhost:5476/ Then click inspect then console then report it to vrchat it may be Your local dev server crashed or restarted.
+
+The images don’t exist in the served directory.
+
+Firewall/antivirus blocked the connection.
+
+Wrong relative paths in your HTML/JS.
  
 ## Where can I ask more questions?
 Make sure to read the [VCC documentation](https://vcc.docs.vrchat.com/) to learn more about the Creator Companion.
