@@ -1,43 +1,170 @@
-# Creator Companion
+Bienvenido(a) a Ciudadanos en Acción: La Ruta del Politólogo UNIMINUTO.
 
-The VRChat Creator Companion (VCC) provides everything you need for creating VRChat worlds and avatars in Unity!
+Las Ciencias Políticas permiten comprender cómo se organiza la sociedad, cómo se ejerce el poder, cómo participan los ciudadanos y cómo se construyen soluciones para los problemas colectivos.
 
-## Features
+Durante este recorrido deberás superar cinco territorios de aprendizaje. En cada uno encontrarás desafíos, actividades interactivas y enemigos que intentarán impedir tu avance.
 
-- **[VRChat Package Manager](vpm) (VPM)** - Manage your VRChat packages easily.
-- **[Official packages](/vpm/packages)** - VRChat's SDK for creating worlds and avatars in Unity.
-- **[Community packages](vpm/curated-community-packages)** - Access tools and assets created by other users.
-- **Learning resources & Tools** - Get tutorials, links, and the [Quick Launcher](https://docs.vrchat.com/docs/vrc-quick-launcher).
+Cada reto superado te permitirá obtener experiencia ciudadana, desbloquear nuevos espacios y fortalecer tus competencias como futuro profesional comprometido con la transformación social.
 
-Watch the video below to learn how to get started.
+Tu objetivo final será convertirte en un Ciudadano Transformador capaz de analizar problemas públicos, comprender la realidad social y promover el bienestar colectivo.
 
-<iframe width="100%" class="ratio-16-by-9" src="https://www.youtube-nocookie.com/embed/0u1g0TYoJsU" title="YouTube video player" frameborder="0" allow="clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>
+¡La aventura comienza ahora!
+ESPACIO 1. ANÁLISIS GEOGRÁFICO
+Enemigo: La Apatía
 
-## Download It
-The Creator Companion is available [on the VRChat website](https://vrchat.com/home/download). You can always [download the latest version directly](https://vrchat.com/download/vcc).
+La Apatía intenta convencer a los ciudadanos de que el territorio no influye en la vida de las comunidades.
 
-## Installer
-The Creator Companion will be installed into your "%LOCALAPPDATA%\Programs" folder by default (e.g. `C:\Users\UserName\AppData\Local\Programs`). You can change this during installation if you like. You can delete the installer once the installation is complete.
+Para derrotarla deberás comprender las relaciones entre espacio, territorio y sociedad.
 
-## Requirements
-- Unity Hub and Unity must be installed.
-    - When you launch the Creator Companion, it checks whether Unity and Unity Hub are installed. If not, it shows you how to install them.
-    - If you follow these instructions, you will get the latest version of the Unity Hub and a [version of Unity compatible with the VRChat SDK](https://creators.vrchat.com/sdk/upgrade/current-unity-version).
-- The Creator Companion supports Windows 10 and 11 (64-bit).
-    - The [CLI has some functionality on Mac and Linux](vpm/cli#mac-and-linux-support).
-    - Other operating systems are not fully supported.
-- To upload worlds and avatars, you must create an account on the [VRChat website](https://vrchat.com/home/).
+Retos
+Semana 6
 
-### Unity Editor Versions
-The Creator Companion automatically installs VRChat's [currently supported Unity version](https://creators.vrchat.com/sdk/upgrade/current-unity-version). If you already installed the correct version, the Creator Companion finds it automatically.
+Millonario Geográfico
 
-### Suggesting changes
-Our documentation is public on GitHub, and we appreciate contributions from our community! Click 'Edit this page' at the bottom of any page to suggest changes.
+Reto de preguntas y respuestas sobre análisis geográfico.
+Recompensa: 100 puntos de experiencia.
 
-When suggesting changes, GitHub will ask you to
-1. [Sign up](https://github.com/join) for a free GitHub account,
-2. [Create a fork](https://github.com/vrchat-community/creator-companion/fork) of this repository,
-3. [Edit the page](https://github.com/vrchat-community/creator-companion/edit/main/Docs/docs/index.md) with GitHub's built-in Markdown editor,
-4. And [submit a Pull Request](https://github.com/vrchat-community/creator-companion/compare) to have your changes reviewed and merged into our documentation.
+Semana 6 - Millonario Geográfico
 
-Thank you for your help!
+Semana 7
+
+Trivial Geográfico
+
+Pon a prueba tus conocimientos territoriales.
+
+
+
+Semana 7 - Trivial Geográfico
+
+Semana 8
+
+Retro Quiz Geográfico
+
+Semana 8 - Retro Quiz Geográfico
+
+Insignia obtenida: Explorador Territorial
+
+ESPACIO 2. TEORÍA DEL ESTADO
+Enemigo: La Individualidad
+
+La Individualidad busca debilitar la comprensión de las instituciones que permiten la convivencia colectiva.
+
+Retos
+Semana 6
+
+Teoría del Estado - Semana 6
+
+Semana 7
+
+Teoría del Estado - Semana 7
+
+Semana 8
+
+Teoría del Estado - Semana 8
+
+Insignia obtenida: Guardián del Estado
+
+ESPACIO 3. POLÍTICA EXTERIOR DE COLOMBIA
+Enemigo: Falta de Conciencia Ciudadana
+
+La Falta de Conciencia Ciudadana intenta que los ciudadanos desconozcan el papel de Colombia en el escenario internacional.
+
+Retos
+Semana 6
+
+Política Exterior de Colombia - Semana 6
+
+Semana 7
+
+Política Exterior de Colombia - Semana 7
+
+Semana 8
+
+Política Exterior de Colombia - Semana 8
+
+Insignia obtenida: Embajador Ciudadano
+
+ESPACIO 4. SISTEMA POLÍTICO COLOMBIANO
+Enemigo: Falta de Sensibilidad Social
+
+Este enemigo busca que los ciudadanos desconozcan los mecanismos democráticos que garantizan la participación política.
+
+Retos
+Semana 6
+
+Sistema Político Colombiano - Semana 6
+
+Semana 7
+
+Sistema Político Colombiano - Semana 7
+
+Semana 8
+
+Sistema Político Colombiano - Semana 8
+
+Insignia obtenida: Defensor de la Democracia
+
+ESPACIO 5. INTRODUCCIÓN A LA CIENCIA POLÍTICA
+Jefe Final
+
+En este espacio se reúnen todos los enemigos derrotados para presentar el desafío definitivo.
+
+Retos
+Semana 6
+
+Introducción a la Ciencia Política - Semana 6
+
+Semana 7
+
+Introducción a la Ciencia Política - Semana 7
+
+Semana 8
+
+Introducción a la Ciencia Política - Semana 8
+
+Insignia obtenida: Politólogo en Formación
+
+FINAL DEL RECORRIDO
+Registro de Visita
+
+Al completar los cinco espacios, el estudiante deberá interactuar con el Portal de Ciudadanía.
+
+El sistema solicitará:
+
+Nombre completo.
+ID institucional.
+Programa académico.
+Fecha de finalización.
+Correo institucional.
+
+La información quedará almacenada en una base de datos o formulario institucional.
+
+Recompensa Final
+Medalla Digital
+
+"Buen Ciudadano UNIMINUTO"
+
+La medalla se otorgará automáticamente cuando el estudiante:
+
+✅ Complete los cinco espacios.
+
+✅ Supere los quince retos.
+
+✅ Registre su visita final.
+
+Mensaje de cierre
+
+¡Felicitaciones!
+
+Has culminado con éxito la Ruta del Politólogo UNIMINUTO.
+
+Durante esta aventura demostraste compromiso, pensamiento crítico, responsabilidad social y participación ciudadana. Superaste desafíos relacionados con el análisis territorial, la teoría del Estado, la política exterior, el sistema político colombiano y los fundamentos de la ciencia política.
+
+Gracias a tus logros has derrotado a la Apatía, la Falta de Conciencia Ciudadana, la Individualidad y la Falta de Sensibilidad Social.
+
+Como reconocimiento a tu esfuerzo, recibes la Medalla Digital "Buen Ciudadano UNIMINUTO", símbolo de tu compromiso con la construcción de una sociedad más democrática, participativa y solidaria.
+
+La transformación social comienza con ciudadanos informados y comprometidos.
+
+¡Misión cumplida!
+
