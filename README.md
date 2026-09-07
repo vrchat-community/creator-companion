@@ -19,4 +19,4 @@ This repository is a place to file [Bugs](https://github.com/vrchat-community/cr
 
 You can also [track Packages](https://github.com/vrchat-community/creator-companion/issues/new?assignees=&labels=&template=package-upgrade-request.md&title=%5BPACKAGE%5D+) that are not yet compatible with the [VPM](https://vcc.docs.vrchat.com/vpm/) so other creators can know about the issues, and the creators of those packages and prefabs can fix them and inform everyone.
 
-We are migrating our main Docs here as well, so that you can contribute suggestions and changes.
+We are migrating our main Docs here as well, so that you can contribute suggestions and changes to the documentation.
