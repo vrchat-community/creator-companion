@@ -52,4 +52,4 @@ Migrating your existing projects is covered in detail in [VPM: Migrating Project
 
 ## Updating Existing Projects
 
-You can add existing projects to your main Project list by pressing the "Add" button from the navigation on the left. You can either choose a single project folder to add it to the list, or a folder full of projects to add each valid project found to your list (this methid will only go one level deep).
+You can add existing projects to your main Project list by pressing the "Add" button from the navigation on the left. You can either choose a single project folder to add it to the list, or a folder full of projects to add each valid project found to your list (this method will only go one level deep).
