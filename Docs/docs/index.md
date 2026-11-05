@@ -1,4 +1,4 @@
-# Creator Companion
+love # Creator Companion
 
 The VRChat Creator Companion (VCC) provides everything you need for creating VRChat worlds and avatars in Unity!
 
